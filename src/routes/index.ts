@@ -11,5 +11,9 @@ router.get('/',(req:Request,res:Response) =>{
 router.get('/produtos', produtoController.produto)
 router.get('/cadastro', produtoController.cadastrar)
 router.post('/cadastrar', produtoController.finalizarCadastro)
+router.get('/editar/:id', produtoController.editar)
+router.post('/editar/:id', produtoController.editarProduto)
+router.get('/excluir/:id', produtoController.excluir)
+
 
 export default router

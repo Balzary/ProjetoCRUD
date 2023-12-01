@@ -1,0 +1,18 @@
+{{>partials/header}}
+
+<h2>Editar Produtos</h2>
+
+{{#produto}}
+<form action="/editar/{{id}}" method="POST">
+    Nome:<br>
+    <input type="text" id="nome" name="nome" value="{{nome}}" required> <br>
+    Preço:<br>
+    <input type="text" id="preco" name="preco" value="{{preco}}" required> <br>
+    <input type="submit" value="Editar">
+</form>
+{{/produto}}
+
+<a href="/produtos">Voltar</a>
+
+
+{{>partials/footer}}

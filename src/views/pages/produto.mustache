@@ -14,7 +14,10 @@
             <td>{{id}}</td>
             <td>{{nome}}</td>
             <td>R${{preco}}</td>
-            <td>alterar   apagar</td>
+            <td>
+            <a href="/editar/{{id}}">Editar</a>            
+            <a href="/excluir/{{id}}" onclick="return confirm('tem certeza que deseja excluir?')">Excluir</a>
+            </td>
         </tr>
         {{/products}}
     </table>
